@@ -1,0 +1,63 @@
+---
+import { Github, Linkedin, Mail } from "lucide-astro";
+---
+<section class="min-h-[100svh] pt-20 flex items-center bg-[#0f172a] text-white">
+  <div class="max-w-6xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-10">
+
+    <!-- LEFT SIDE -->
+    <div class="flex-1">
+
+      <h1 data-aos="fade-up" class="text-5xl font-bold leading-tight">
+        Hello, I'm Beatrice 👋
+      </h1>
+
+      <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-lg text-gray-300 leading-relaxed">
+        Cloud & Full Stack Engineer passionate about building scalable systems,
+        AI-powered applications, and clean backend architectures on Google Cloud Platform.
+      </p>
+
+      <!-- SOCIALS -->
+      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-6 text-gray-300">
+
+      <a href="https://www.linkedin.com/in/beatricerustandi/" class="hover:text-white">
+        <Linkedin size={22} />
+      </a>
+
+      <a href="https://github.com/beatricedwiputri" class="hover:text-white">
+        <Github size={22} />
+      </a>
+
+      <a href="mailto:beatrice.rustandi@gmail.com" class="hover:text-white">
+        <Mail size={22} />
+      </a>
+
+    </div>
+
+      <!-- BUTTONS -->
+      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-8">
+        <a href="#contact"
+           class="bg-purple-600 px-5 py-3 rounded-lg font-medium hover:bg-purple-700">
+          Contact Me
+        </a>
+
+        <a href="https://drive.google.com/uc?export=download&id=1YpeuCJuwiSaXIKQOTEpHeO_Zp-efb2BS"
+           class="border border-purple-500 px-5 py-3 rounded-lg hover:bg-purple-500/10">
+          Download Resume
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (IMAGE) -->
+    <div class="flex-1 flex justify-center">
+
+      <img data-aos="fade-left" data-aos-delay="300"
+        src="/bea.jpeg"
+        alt="Beatrice"
+        class="w-[300px] md:w-[400px] rounded-2xl object-cover"
+      />
+
+    </div>
+
+  </div>
+</section>

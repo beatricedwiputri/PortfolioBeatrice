@@ -1,0 +1,142 @@
+<section
+  id="honors"
+  class="bg-[#0f172a] text-white py-20 border-t border-white/5"
+>
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold mb-4">
+      Honors & Awards
+    </h2>
+
+    <div class="space-y-16">
+
+      <!-- SCRANTON -->
+      <div class="award-layout">
+
+        <!-- LEFT -->
+        <div data-aos="fade-in" data-aos-delay="100">
+
+          <h3 class="award-title">
+            Scranton Essay Contest — Selected Winner
+          </h3>
+
+          <p class="award-date">
+            Apr 2025
+          </p>
+
+          <p class="award-desc">
+            Recognized among 18 international winners for the essay on gender-balanced AI through role-based applications.
+            <a
+            href="https://scrantoncenter.org/scrantonsquare/ideas_read.asp?idx=176"
+            target="_blank"
+            class="award-button"
+          >
+            Read essay ↗
+          </a>
+          </p>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div data-aos="fade-left" data-aos-delay="100">
+
+          <div class="flex justify-end gap-3 mb-4">
+            <button id="scrantonLeft" class="slide-btn">←</button>
+            <button id="scrantonRight" class="slide-btn">→</button>
+          </div>
+
+          <div
+            id="scrantonSlider"
+            class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar"
+          >
+
+            <img src="/scrantonessay1.jpeg" class="award-image" />
+            <img src="/scrantonessay2.jpeg" class="award-image" />
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ROBOT -->
+      <div class="award-layout">
+
+        <!-- LEFT -->
+        <div data-aos="fade-in" data-aos-delay="200">
+
+          <h3 class="award-title">
+            National AI-Driven Robot Competition — 3rd Place
+          </h3>
+
+          <p class="award-date">
+            Oct 2024
+          </p>
+
+          <p class="award-desc">
+            Built an AI-powered facial detection and analysis program for a marketing robot, enabling real-time visitor expression and gender detection to support marketing insights.
+            
+            <div class="award-meta">
+            <span>AWS</span>
+            <span>•</span> 
+            <span>TensorFlow</span>
+            <span>•</span> 
+            <span>Python</span> 
+          </div>
+          </p>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div data-aos="fade-left" data-aos-delay="200"> 
+
+          <div class="flex justify-end gap-3 mb-4">
+            <button id="robotLeft" class="slide-btn">←</button>
+            <button id="robotRight" class="slide-btn">→</button>
+          </div>
+
+          <div
+            id="robotSlider"
+            class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar"
+          >
+
+            <img src="/airobot1.jpeg" class="award-image" />
+            <img src="/airobot2.jpeg" class="award-image" />
+            <img src="/airobot3.jpeg" class="award-image" />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function setupSlider(leftBtn, rightBtn, sliderId) {
+    const slider = document.getElementById(sliderId);
+
+    document.getElementById(rightBtn)
+      ?.addEventListener("click", () => {
+        slider?.scrollBy({
+          left: 550,
+          behavior: "smooth",
+        });
+      });
+
+    document.getElementById(leftBtn)
+      ?.addEventListener("click", () => {
+        slider?.scrollBy({
+          left: -550,
+          behavior: "smooth",
+        });
+      });
+  }
+
+  setupSlider("scrantonLeft", "scrantonRight", "scrantonSlider");
+  setupSlider("robotLeft", "robotRight", "robotSlider");
+</script>
