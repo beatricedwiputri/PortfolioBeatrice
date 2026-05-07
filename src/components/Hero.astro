@@ -1,11 +1,11 @@
 ---
 import { Github, Linkedin, Mail } from "lucide-astro";
 ---
-<section class="min-h-[100svh] pt-20 flex items-center bg-[#0f172a] text-white">
-  <div class="max-w-6xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between gap-10">
+<section class="min-h-[100svh] pt-24 pb-16 flex items-center bg-[#0f172a] text-white">
+  <div class="max-w-6xl mx-auto px-6 w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
 
     <!-- LEFT SIDE -->
-    <div class="flex-1">
+    <div class="flex-1 text-center lg:text-left">
 
       <h1 data-aos="fade-up" class="text-5xl font-bold leading-tight">
         Hello, I'm Beatrice 👋
@@ -17,7 +17,7 @@ import { Github, Linkedin, Mail } from "lucide-astro";
       </p>
 
       <!-- SOCIALS -->
-      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-6 text-gray-300">
+      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-6 text-gray-300 justify-center lg:justify-start">
 
       <a href="https://www.linkedin.com/in/beatricerustandi/" class="hover:text-white">
         <Linkedin size={22} />
@@ -34,7 +34,7 @@ import { Github, Linkedin, Mail } from "lucide-astro";
     </div>
 
       <!-- BUTTONS -->
-      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-8">
+      <div data-aos="fade-up" data-aos-delay="200" class="flex gap-4 mt-8 justify-center lg:justify-start flex-wrap">
         <!-- <a href="#contact"
            class="bg-purple-600 px-5 py-3 rounded-lg font-medium hover:bg-purple-700">
           Contact Me
@@ -54,7 +54,7 @@ import { Github, Linkedin, Mail } from "lucide-astro";
       <img data-aos="fade-left" data-aos-delay="300"
         src={`${import.meta.env.BASE_URL}bea.jpeg`}
         alt="Beatrice"
-        class="w-[300px] md:w-[400px] rounded-2xl object-cover"
+        class="w-[200px] md:w-[400px] rounded-2xl object-cover"
       />
 
     </div>
