@@ -41,6 +41,24 @@ html {
   background: #7e22ce;
 }
 
+.about-video {
+  width: 95%;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 0 40px rgba(147, 51, 234, 0.18);
+
+  transition: 0.4s ease;
+}
+
+.about-video:hover {
+  transform: scale(1.02);
+}
 
 /* skill tags */
 .skill {
